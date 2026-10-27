@@ -1,34 +1,8 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-    <id>com.woutwerkman.calltreevisualizer.RewriteInRustIdePlugin</id>
+    <id>com.woutwerkman.rewriteinrustplugin.RewriteInRustIdePlugin</id>
+    <name>Rewrite in Rust?</name>
+    <vendor>Workshop</vendor>
+    <description><![CDATA[A playful IntelliJ plugin that takes the job of that friend of yours keeps telling you to rewrite in Rust]]></description>
 
-    <!-- Public plugin name should be written in Title Case.
-     Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
-    <name>RewriteInRustIdePlugin</name>
-
-    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor url="https://www.yourcompany.com">YourCompany</vendor>
-
-    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
-         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
-    <description><![CDATA[
-        Enter short description for your plugin here.<br>
-        <em>most HTML tags may be used</em>
-        ]]></description>
-
-    <!-- Product and plugin compatibility requirements.
-         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
-    <depends>com.jetbrains.rust</depends>
     <depends>com.intellij.java</depends>
-
-    <resource-bundle>messages.MyMessageBundle</resource-bundle>
-
-    <!-- Extensions defined by the plugin.
-         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="MyToolWindow" factoryClass="com.woutwerkman.calltreevisualizer.MyToolWindowFactory"
-                    icon="AllIcons.Toolwindows.ToolWindowPalette"/>
-    </extensions>
-
 </idea-plugin>
