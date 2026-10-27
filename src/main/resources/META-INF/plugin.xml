@@ -5,4 +5,17 @@
     <description><![CDATA[A playful IntelliJ plugin that takes the job of that friend of yours keeps telling you to rewrite in Rust]]></description>
 
     <depends>com.intellij.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup displayType="BALLOON" id="rust_reminder_notifications_group" />
+        <backgroundPostStartupActivity implementation="com.woutwerkman.rewriteinrustplugin.RustAnnoyer" />
+        <localInspection
+                language="JAVA"
+                shortName="RewriteThrowsInRust"
+                displayName="Rewrite throws in Rust?"
+                groupName="Rewrite in Rust?"
+                enabledByDefault="true"
+                implementationClass="com.woutwerkman.rewriteinrustplugin.YuckTheyAreThrowingInspection"
+        />
+    </extensions>
 </idea-plugin>
